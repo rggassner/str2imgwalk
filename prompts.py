@@ -1,6 +1,6 @@
 from urllib.request import urlretrieve
 import pandas as pd
-
+# Remember to remove special characters to avoid command injection before passing lines as parameters
 # Download the parquet table
 table_url = f'https://huggingface.co/datasets/poloclub/diffusiondb/resolve/main/metadata.parquet'
 urlretrieve(table_url, 'metadata.parquet')
